@@ -1,0 +1,117 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+ 
+}
+
+
+.nav{
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(135deg, #001f3f, #0074D9);;
+  color: white;
+  padding: 20px;
+
+}
+.nav--header{
+  display: flex;
+}
+.header-btn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none; /* Removes the default button border */
+  background: none; /* Removes background color */
+  color: white; /* Button text color */
+  border-bottom: 2px solid transparent; /* Invisible border for spacing */
+  transition: border-color 0.3s ease; /* Smooth transition for underline */
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  color: linear-gradient(135deg, #003366, #3399FF);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.87); /* Visible underline on hover */
+}
+.btn{
+  display: flex;
+  margin-left: auto;
+  justify-content: space-around;
+}
+
+.hero{
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+ 
+
+}
+.hero-img{
+  width: 30rem;
+}
+.services{
+  display:flex ;
+  flex-direction: column;
+  width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;         /* ADD */
+    
+}
+.services:hover{
+background-color: #003366;
+  border-radius: 10px;
+}
+.card-img{
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+
+
+}
+.service-description{
+  text-align: center;
+  display:flex ;
+  flex-direction: column;
+  
+}
+.abt-container{
+  background: linear-gradient(135deg, #003366, #3399FF);
+  border-radius: 1rem;
+  margin-top: 35px;
+  padding: 2.5rem 0 1.5rem;
+  row-gap: .75rem;
+  width: 100%;
+  height: 30rem;
+  
+}
+.about-img{
+  width: 200px;
+  justify-self: center;
+  animation: floating 2s ease-in-out infinite;
+}
+.cards-list{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+
+}
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .slider button {
+    font-size: 18px; /* Adjust button size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider button {
+    font-size: 16px; /* Adjust button size for mobile */
+  }
+}
